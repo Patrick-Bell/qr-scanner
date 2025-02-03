@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/qr-scanner/static/css/main.f759e90c.css",
-    "main.js": "/qr-scanner/static/js/main.fbfdc08e.js",
+    "main.js": "/qr-scanner/static/js/main.c77c1c17.js",
     "static/js/488.125d57fa.chunk.js": "/qr-scanner/static/js/488.125d57fa.chunk.js",
     "static/media/barcode-hero.png": "/qr-scanner/static/media/barcode-hero.7e4bbda80386a2fc9580.png",
     "static/media/qr-logo.png": "/qr-scanner/static/media/qr-logo.1d52e29c06edf2c36617.png",
@@ -11,11 +11,11 @@
     "static/media/poppins-latin-ext-400-normal.woff2": "/qr-scanner/static/media/poppins-latin-ext-400-normal.d7c074a9c34fe9785f69.woff2",
     "index.html": "/qr-scanner/index.html",
     "main.f759e90c.css.map": "/qr-scanner/static/css/main.f759e90c.css.map",
-    "main.fbfdc08e.js.map": "/qr-scanner/static/js/main.fbfdc08e.js.map",
+    "main.c77c1c17.js.map": "/qr-scanner/static/js/main.c77c1c17.js.map",
     "488.125d57fa.chunk.js.map": "/qr-scanner/static/js/488.125d57fa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f759e90c.css",
-    "static/js/main.fbfdc08e.js"
+    "static/js/main.c77c1c17.js"
   ]
 }
