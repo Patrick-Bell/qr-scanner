@@ -35,8 +35,8 @@ const EmailPage = () => {
 
     if (!qrSize) {
         newErrors.size = "Size cannot be empty";
-      } else if (qrSize < 100 || qrSize > 400) {
-        newErrors.size = "Size must be between 100 and 400";
+      } else if (qrSize < 100 || qrSize > 350) {
+        newErrors.size = "Size must be between 100 and 350";
       }
 
     setErrors(newErrors);
@@ -89,8 +89,9 @@ const EmailPage = () => {
                 </Box>
               </ListItem>
               <TextField
+              fullWidth
                 disabled={qrData || loading}
-                sx={{ marginTop: 1, width: '75%' }}
+                sx={{ marginTop: 1, }}
                 placeholder='example@gmail.com'
                 label="Email"
                 onChange={(e) => setEmail(e.target.value)}
@@ -98,8 +99,9 @@ const EmailPage = () => {
                 helperText={errors.email}
               />
               <TextField
+              fullWidth
                 disabled={qrData || loading}
-                sx={{ marginTop: 1, width: '75%' }}
+                sx={{ marginTop: 1, }}
                 placeholder='Subject'
                 label="Subject"
                 onChange={(e) => setSubject(e.target.value)}
@@ -107,8 +109,9 @@ const EmailPage = () => {
                 helperText={errors.subject}
               />
               <TextField
+               fullWidth
                 disabled={qrData || loading}
-                sx={{ marginTop: 1, width: '75%' }}
+                sx={{ marginTop: 1, }}
                 placeholder='Message'
                 label="Message"
                 onChange={(e) => setMessage(e.target.value)}
@@ -208,8 +211,8 @@ const EmailPage = () => {
                   value={qrData} // Generated QR Data
                   size={qrSize} // Custom size
                 />
-                <Box sx={{height:'50px', width:'256px', background:'#5271FF', marginTop:'5px', display:'flex', alignItems:'center', textAlign:'center'}}>
-                    <Typography fontWeight={800} sx={{color:'white', margin:'auto auto'}}>SCAN ME</Typography>
+                <Box sx={{height:'50px', width: qrSize, background:'#5271FF', marginTop:'5px', display:'flex', alignItems:'center', textAlign:'center'}}>
+                    <Typography fontWeight={800} sx={{color:'white', margin:'auto auto',}}>SCAN ME</Typography>
                 </Box>
                 <Divider sx={{m:2, width:'100%'}} />
                 <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>

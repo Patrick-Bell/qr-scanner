@@ -135,7 +135,7 @@ const VCardPage = () => {
               </ListItem>
 
               <Grid container spacing={2}>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
               <TextField
               sx={{width:'100%'}}
                 disabled={vCard || loading}
@@ -148,7 +148,7 @@ const VCardPage = () => {
                 helperText={errors.name}
               />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
               <TextField
                 sx={{width:'100%'}}
                 disabled={vCard || loading}
@@ -161,7 +161,7 @@ const VCardPage = () => {
                 helperText={errors.lastName}
               />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
               <TextField
               sx={{width:'100%'}}
                 disabled={vCard || loading}
@@ -174,7 +174,7 @@ const VCardPage = () => {
                 helperText={errors.email}
               />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
               <TextField
                 sx={{width:'100%'}}
                 disabled={vCard || loading}
@@ -186,7 +186,7 @@ const VCardPage = () => {
                 helperText={errors.number}
               />
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
               <TextField
                 sx={{width:'100%'}}
                 disabled={vCard || loading}
@@ -302,6 +302,7 @@ const VCardPage = () => {
                     placeholder="https://www.google.com"
                     onChange={(e) => setWebPage(e.target.value)}
                     error={errors.webpage}
+                    label='Webpage URL'
                     helperText={errors.webpage}
                   />
                 </Box>
@@ -388,7 +389,7 @@ const VCardPage = () => {
         <Box 
   onClick={handleCardClick} 
   sx={{ 
-    width: '400px', 
+    minWidth: '350px', 
     height: '300px', 
     background: 'white', 
     borderRadius: '20px', 
@@ -428,7 +429,7 @@ const VCardPage = () => {
   </Box>
 
   {/* QR Code in the bottom right */}
-  <Box sx={{ position: 'absolute', bottom: '10px', right: '10px', p: 2 }}>
+  <Box sx={{ position: 'absolute', bottom: '0', right: '0', p: 2 }}>
   <QRCode value={vCard} fgColor={qrColor} size={75} />
   </Box>
 
@@ -448,7 +449,7 @@ const VCardPage = () => {
 </Box>
 
 
-      <Box onClick={handleCardClick} style={{ width: '400px', height: '300px', background: '#5271FF', color: 'black', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius:'20px' }}>
+      <Box onClick={handleCardClick} style={{ width: '350px', height: '300px', background: '#5271FF', color: 'black', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius:'20px' }}>
         <Typography variant="subtitle2" fontWeight={800} color="white">QR Lite vCard</Typography>
       </Box>
     </ReactCardFlip>

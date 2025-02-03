@@ -8,7 +8,6 @@ import QrCodeIcon from '@mui/icons-material/QrCode';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import ReviewsSection from "./Reviews";
 import { useNavigate } from "react-router-dom";
-import { Facebook, Instagram, LinkedIn, Twitter } from '@mui/icons-material';
 import Footer from "./Footer";
 
 
@@ -49,7 +48,10 @@ const Home = () => {
               >
                 Create QR Codes for your websites, apps, and products OR create QR Vcards!
               </Typography>
-              <Box sx={{ mt: 3 }}>
+
+
+
+              <Box sx={{ mt: 3, display:'flex', alignContent:'center', justifyContent:'center', }}>
                 <Button endIcon={<LibraryBooksIcon />} variant="contained" sx={{ mr: 2 }}>
                   Learn More
                 </Button>
@@ -57,6 +59,9 @@ const Home = () => {
                   Get Started
                 </Button>
               </Box>
+
+
+              
             </Grid>
 
             {/* Image Section */}
@@ -138,8 +143,8 @@ const Home = () => {
       <ReviewsSection />
 
   
-
           <Footer />
+  
     </>
   );
 };

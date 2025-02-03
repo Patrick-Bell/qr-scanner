@@ -40,8 +40,8 @@ const WebpageQR = () => {
 
     if (!qrSize) {
       newErrors.size = "Size cannot be empty";
-    } else if (qrSize < 100 || qrSize > 400) {
-      newErrors.size = "Size must be between 100 and 400";
+    } else if (qrSize < 100 || qrSize > 350) {
+      newErrors.size = "Size must be between 100 and 350";
     }
 
     if (Object.keys(newErrors).length > 0) {
@@ -86,10 +86,12 @@ const WebpageQR = () => {
                 </Box>
               </ListItem>
               <TextField
+                fullWidth
                 disabled={qrData || loading}
                 placeholder="https://www.example.com"
-                sx={{ marginTop: 1, width: '75%' }}
+                sx={{ marginTop: 1}}
                 error={!!errors.webpage}
+                label='Webpage URL'
                 helperText={errors.webpage}
                 onChange={(e) => setWebpage(e.target.value)}
               />
@@ -186,7 +188,7 @@ const WebpageQR = () => {
                   value={qrData} // Generated QR Data
                   size={qrSize} // Custom size
                 />
-                <Box sx={{height:'50px', width:'256px', background:'#5271FF', marginTop:'5px', display:'flex', alignItems:'center', textAlign:'center'}}>
+                <Box sx={{height:'50px', width: qrSize, background:'#5271FF', marginTop:'5px', display:'flex', alignItems:'center', textAlign:'center'}}>
                     <Typography fontWeight={800} sx={{color:'white', margin:'auto auto'}}>SCAN ME</Typography>
                 </Box>
                 <Divider sx={{m:2, width:'100%'}} />

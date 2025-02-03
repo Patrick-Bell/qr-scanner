@@ -65,7 +65,7 @@ const Navbar = () => {
       >
         <List sx={{ p:1 }}>
         <Grid container maxWidth={700}>
-        <Grid item xs={6}>
+        <Grid item xs={12} sm={6}>
               <ListItem onClick={() => navigate('/web')} sx={{ borderRadius: '10px', mb: 1, "&:hover": { background:'#729BFF', cursor:'pointer'}}}>
                 <ListItemAvatar>
                   <Avatar sx={{ borderRadius: '10px', border:'1px solid lightgrey', background:'white', color:'black' }}>
@@ -79,7 +79,7 @@ const Navbar = () => {
                 />
               </ListItem>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} sm={6}>
             <ListItem onClick={() => navigate('/web')} sx={{ borderRadius: '10px', mb: 1, "&:hover": { background:'#729BFF', cursor:'pointer'}}}>
             <ListItemAvatar>
                   <Avatar sx={{ borderRadius: '10px', border:'1px solid lightgrey', background:'white', color:'black', }}>
@@ -93,7 +93,7 @@ const Navbar = () => {
                 />
               </ListItem>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
               <ListItem onClick={() => navigate('/web')} sx={{ borderRadius: '10px', mb: 1, "&:hover": { background:'#729BFF', cursor:'pointer'}}}>
                 <ListItemAvatar>
                   <Avatar sx={{ borderRadius: '10px', border:'1px solid lightgrey', background:'white', color:'black' }}>
@@ -107,7 +107,7 @@ const Navbar = () => {
                 />
               </ListItem>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={6}>
               <ListItem onClick={() => navigate('/web')} sx={{ borderRadius: '10px', mb: 1, "&:hover": { background:'#729BFF', cursor:'pointer'}}}>
                 <ListItemAvatar>
                   <Avatar sx={{ borderRadius: '10px', border:'1px solid lightgrey', background:'white', color:'black', }}>
@@ -125,8 +125,6 @@ const Navbar = () => {
             </List>
       </Menu>
 
-
-        <Button>FAQ</Button>
       </Box>
 
       <Box sx={{marginRight:'30px'}}>

@@ -7,6 +7,7 @@ const Footer = () => {
 
   return (
     <Box
+    fullWidth
       sx={{
         background: "#5271FF",
         borderRadius: "20px",
@@ -14,12 +15,11 @@ const Footer = () => {
         padding: "40px 20px",
         position: "relative",
         zIndex: 1,
-        overflow: 'hidden',
       }}
     >
 
       {/* Footer Content */}
-      <Grid sx={{ width: '75%', margin: 'auto' }} container spacing={3}>
+      <Grid sx={{ width: '100%', margin: 'auto auto' }} container spacing={3}>
         {/* Product Section */}
         <Grid item xs={12} md={3}>
           <Typography fontWeight={800} sx={{ textTransform: 'uppercase', color: 'white' }}>Product</Typography>
@@ -53,12 +53,13 @@ const Footer = () => {
             padding: '20px',
             backgroundColor: '#f9f9f9',
             boxShadow: 3,
+            width:'100%'
           }}>
             <Typography fontWeight={800} sx={{ mb: 2 }}>Subscribe</Typography>
             <TextField
+            fullWidth
               variant="outlined"
               placeholder="Enter your email"
-              fullWidth
               InputProps={{
                 endAdornment: (
                   <IconButton>
