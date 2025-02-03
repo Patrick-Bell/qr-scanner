@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+body, html {
+  overflow-x: hidden;
+}
+
+.swiper{
+  height: 325px;
+}
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: #5271FF !important;
+          font-size: 24px;
+          background-color: rgba(255, 255, 255, 0.8);
+          border-radius: 50%;
+          padding: 10px;
+        }
+
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+          background-color: rgba(255, 255, 255, 1);
+        }
+
+        /* Custom Dot Styles */
+        .swiper-pagination-bullet {
+          background-color: #ddd !important;  /* Inactive bullets */
+        }
+
+        .swiper-pagination-bullet-active {
+          background-color: #5271FF !important;  /* Active bullet color */
+        }
