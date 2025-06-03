@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Box } from "@mui/material";
 
-  const ScannerAnimation = () => {
+   const ScannerAnimation = () => {
   return (
     <Box sx={{ position: "relative", width: "100vw", overflow: "hidden", height:'100vh'}}>
       {/* Scanning Line */}
