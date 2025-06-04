@@ -1,5 +1,5 @@
 /*
- <Box sx={{position: 'absolute', top: 0, right: 0, height: '150px', width: '20px', background: '#5271FF'}} />
+  <Box sx={{position: 'absolute', top: 0, right: 0, height: '150px', width: '20px', background: '#5271FF'}} />
     <Box sx={{position: 'absolute', top: 0, right: 0, height: '20px', width: '150px', background: '#5271FF'}} />
 
     <Box sx={{position: 'absolute', top: 0, left: 0, height: '150px', width: '20px', background: '#5271FF'}} />
