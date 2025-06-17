@@ -3,7 +3,7 @@ import { Box, Button, Menu, MenuItem, List, ListItem, ListItemAvatar, ListItemTe
 import Logo from '../assets/qr-logo.png'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import QrCodeScannerIcon from '@mui/icons-material/QrCodeScanner';
-   import { useNavigate } from "react-router-dom";
+    import { useNavigate } from "react-router-dom";
 
       const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
