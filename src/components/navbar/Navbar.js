@@ -5,7 +5,7 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import QrCodeScannerIcon from '@mui/icons-material/QrCodeScanner';
 import { useNavigate } from "react-router-dom";
  
-       const Navbar = () => {
+        const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const navigate = useNavigate()
