@@ -4,7 +4,7 @@ import Navbar from "../navbar/Navbar";
 import QrCodeScannerIcon from '@mui/icons-material/QrCodeScanner';
 import QRCode from "react-qr-code"; // To generate QR code
 import CheckIcon from '@mui/icons-material/Check';
-  import { emailUseCase } from "../api/UseCases";
+import { emailUseCase } from "../api/UseCases";
 
 
 const EmailPage = () => {
