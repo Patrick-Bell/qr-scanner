@@ -1,9 +1,9 @@
 import React, { createContext, useContext } from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
- import "@fontsource/poppins"; // Add the Poppins font
+import "@fontsource/poppins"; // Add the Poppins font
        
- const theme = createTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: "#5271FF", // Custom main color
