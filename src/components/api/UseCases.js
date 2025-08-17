@@ -1,4 +1,4 @@
-  export const webUseCase = [
+   export const webUseCase = [
     { case: 'Product Details', desc: 'Access detailed product information, specifications, and customer reviews.' },
     { case: 'Online Ordering', desc: 'Easily browse and place orders from an online menu, directly from your mobile device.' },
     { case: 'App Download', desc: 'Quickly download the mobile app from your app store for a more personalized experience.' },
