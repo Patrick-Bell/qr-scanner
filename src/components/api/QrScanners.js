@@ -1,4 +1,4 @@
- export const qrScanners = [
+  export const qrScanners = [
     { 
       name: 'Phone Number Scanner',
       desc: 'Scan a QR code that automatically dials a phone number or saves it to your contacts.' 
